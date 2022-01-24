@@ -1,77 +1,111 @@
-# `Expense App`
+# Quizstar !
 
-This app helps you with managing Income and Expense. It is coded in flutter, dart hive. TBH I want to code the same app in Flutter , React and Jetpack Compose to see the difference and get some experience, but let's see what Happens. :) 🤠🤗
+  
 
-```
-Will try and update this to use different (state management) Libraries.
-```
+This is a **Complete Quiz App in FLUTTER** using a lot of features such as
 
-## Making Changes for V2
+* Multiple Screens
 
-    - Removed Gradient Code
-    - Adding Date and Delete Option in each Expense Tile
+* Timer (30 sec By Default)
 
-# `Screenshots`
+* Button Color Changes On Click
 
-<img src="screenshots/Screenshot_1638287748_framed.png" width="300" alt="Screenshot">
+* Result Page
 
-<img src="screenshots/Screenshot_1636140672_framed.png" width="300" alt="Screenshot">
+* Questions From JSON
 
-<img src="screenshots/Screenshot_1636140708_framed.png" width="300" alt="Screenshot">
+* Random Questions Genration Added
+  
 
-<img src="screenshots/Screenshot_1636140829_framed.png" width="300" alt="Screenshot">
+And a lot more...
 
-<img src="screenshots/Screenshot_1636140834_framed.png" width="300" alt="Screenshot">
+  
 
-<img src="screenshots/Screenshot_1636140838_framed.png" width="300" alt="Screenshot">
+## Watch The Complete Tutorial Here
 
-<img src="screenshots/Screenshot_1638088460_framed.png" width="300" alt="Screenshot">
+### [In English](https://youtu.be/yHrpx4PoBzU)
 
-<img src="screenshots/Screenshot_1638088465_framed.png" width="300" alt="Screenshot">
+### [In Hindi](https://youtu.be/tJob-xdGLXE)
 
-# `Credits`
 
-```
-## Face Emoji : http://clipart-library.com/images_k/transparent-happy-emoji/transparent-happy-emoji-15.png
+### Star It And Play With The Code
 
-## Icon : <div>Icons made by <a href="https://www.flaticon.com/authors/gowi" title="GOWI">GOWI</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  
 
-## App Icon : <a target="_blank" href="https://icons8.com/icon/pBgBsoOMl5LD/money">Money</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-```
+## Here Are A Few Screenshots From The App
 
-## `BUG`
+![The Card Page](./gitimages/cards.png "The Card Page")
 
-When month is 12, Need to switch years too, to reflect changes. ( Showing transaction of nearby months )
-Bar chart skips date with single unit of expense.
-Multiple setState cause anomalies, will use something else.
+![A Simple Quiz Page](./gitimages/quizpage.png "A Simple Quiz Page")
 
-## `Features`
+![When A Button Is Clicked](./gitimages/btnclick.png "When A Button Is Clicked")
 
-`❌` Fix year when month is December.
+![The Result Page](./gitimages/result.png "The Result Page")
 
-`❌` Add Monthly limit and show How much has been spent Yet.
 
-`❌` Show Charts of Money Spent on each day
+# **Latest Commit** 
 
-`✔️` Add Expense and Income
+1. Migrated To AndroidX
+2. Added Array Random Generation By Default as Most Of You Were Asking This  
 
-`✔️` Show Total Balance
+## **Changelog/Commit 01**
 
-`❌` Option to Extract data or Server ?
+1. Updated Descriptions
 
-`✔️` Option to add Bio Auth
+2. Added JSON Files to Open for Diffrent Cards / Languages
 
-`✔️` Add Provider ( possibly in another branch )
+3. Fixed The Code for Checking Answers..
 
-`✔️` Add Models For Data
+  
+## **Changelog/Commit 02**
 
-`✔️` Chart plot points is based on when user enters data , not on expense date , so chart might have bars coming back and moving front
+  1. Updated Code To Pick Questions Randomly
+  ```dart
+    // extra variable to iterate
+    int j = 1;
+    // to create the array elements randomly use the dart:math Module
+    // --- CODE ---
+    // ----- USE THIS IS CODE IF YOU WANT TO GENERATE ARRAY RANDOMLY -----
 
-```
-## `Data`
+      // import 'dart:math';
+      //   var random_array;
+      //   var distinctIds = [];
+      //   var rand = new Random();
+      //     for (int i = 0; ;) {
+      //     distinctIds.add(rand.nextInt(10));
+      //       random_array = distinctIds.toSet().toList();
+      //       if(random_array.length < 10){
+      //         continue;
+      //       }else{
+      //         break;
+      //       }
+      //     }
+      //   print(random_array);
 
-    - amount
-    - type [ "Income", "Expense" ]
-    - date
-    - note ( 256 )
-```
+    var random_array = [1, 6, 7, 2, 4, 10, 8, 3, 9, 5];
+  ```
+  2. Changed Button Click Timer To 1 Second ( 2 sec Earlier )
+  ```dart
+      Timer(Duration(seconds: 1), nextquestion);
+  ```
+  3. Many Asked How To Increase And Decrease timer Timer ! Just Change The Timer Variable's Value 
+  ```dart
+      int timer = 30;
+  ```
+  
+## **Changelog/Commit 03**
+
+  
+1. Migrated To AndroidX
+2. Added Array Random Generation By Default as Most Of You Were Asking This  
+
+
+## **Changelog/Commit 04**
+
+1. Solved An Issue Of Cheating LoopHole : https://github.com/desi-programmer/flutter-quizstar/issues/2
+
+2. Disabled Multiple Button Pressed After Answering
+
+## **Changelog/Commit 05**
+
+*Coming Soon*
